@@ -18,6 +18,9 @@ jobs:
         float-precision: [2]
 
     steps:
+      - name: install OpenMP library
+        run: brew install libomp
+
       - uses: actions/checkout@v1
 
       - name: make build directory
